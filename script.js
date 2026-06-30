@@ -1,5 +1,15 @@
 "use strict";
 
+// Navbar qui change au scroll
+window.addEventListener("scroll", function() {
+    var navbar = document.querySelector("#navbar");
+    if (window.scrollY > 50) {
+        navbar.classList.add("scrolled");
+    } else {
+        navbar.classList.remove("scrolled");
+    }
+});
+
 var dataProjets = [
     {
         "titre": "l'Enfant Bleu - Saison 00, Luidji",
@@ -213,4 +223,3 @@ lienNoli.style.padding = "0 20px 20px 20px";
 document.querySelectorAll("#liste-projets li")[6].append(lienNoli);
 
 console.log("Hello World!");
-
