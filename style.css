@@ -141,8 +141,10 @@ footer {
     background-color: #1E2440;
     border-radius: 16px;
     padding: 40px;
-    max-width: 800px;
+    max-width: 900px;
     width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
     position: relative;
 }
 
@@ -179,8 +181,9 @@ footer {
 
 #carrousel-image {
     width: 100%;
-    height: 400px;
-    object-fit: cover;
+    max-height: 65vh;
+    object-fit: contain;
+    background-color: #2D3555;
     border-radius: 8px;
     flex: 1;
 }
@@ -230,4 +233,71 @@ footer {
     font-size: 1.1rem;
     line-height: 1.8;
     color: #F5F5DC;
+}
+
+/* Responsive : tablette et mobile */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+        padding: 40px 20px 15px 20px;
+    }
+
+    #about {
+        flex-direction: column;
+        padding: 30px 20px;
+        gap: 25px;
+    }
+
+    #about img {
+        width: 100%;
+        height: 280px;
+    }
+
+    #liste-projets {
+        grid-template-columns: 1fr;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    #popup-contenu {
+        padding: 25px;
+    }
+
+    #carrousel-image {
+        height: 250px;
+        object-fit: contain;
+        background-color: #2D3555;
+    }
+
+    #carrousel {
+        gap: 10px;
+    }
+
+    #btn-precedent, #btn-suivant {
+        padding: 8px 12px;
+        font-size: 1.2rem;
+    }
+}
+
+#mentions-legales {
+    padding: 40px;
+    max-width: 800px;
+    border-top: 1px solid #1E2440;
+}
+
+#mentions-legales h2 {
+    font-family: 'Syne', sans-serif;
+    font-size: 1.2rem;
+    color: #9B8FC0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+#mentions-legales p {
+    font-size: 0.85rem;
+    line-height: 1.6;
+    color: #F5F5DC;
+    opacity: 0.8;
+    margin-bottom: 8px;
 }
