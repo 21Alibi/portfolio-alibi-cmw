@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Alicia BIWOLE</title>
     <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
     <main>
         <h1>Mon Portfolio</h1>
         <section id="about">
-            <img src="images/about-me.jpg" alt="Alicia Biwolé">
+            <img src="images/about-me.jpg" alt="Photo d'Alicia Biwolé, designer graphique">
             <div id="about-texte">
                 <h2>About me</h2>
                 <p>Je suis <strong>Alicia Biwolé</strong>, designer graphique et exploratrice visuelle passionnée. 
@@ -29,16 +30,23 @@
     </footer>
     <div id="popup" style="display:none;">
         <div id="popup-contenu">
-            <button id="popup-fermer">✕</button>
+            <button id="popup-fermer" aria-label="Fermer la fenêtre">✕</button>
             <h2 id="popup-titre"></h2>
             <p id="popup-description"></p>
             <div id="carrousel">
-                <button id="btn-precedent">←</button>
+                <button id="btn-precedent" aria-label="Photo précédente">←</button>
                 <img id="carrousel-image" src="" alt="">
-                <button id="btn-suivant">→</button>
+                <button id="btn-suivant" aria-label="Photo suivante">→</button>
             </div>
         </div>
     </div>
+    <section id="mentions-legales">
+        <h2>Mentions légales</h2>
+        <p><strong>Éditeur du site :</strong> Alicia Biwolé, étudiante en Master CMW, Université Gustave Eiffel.</p>
+        <p><strong>Hébergement :</strong> GitHub Pages, GitHub Inc., 88 Colin P Kelly Jr St, San Francisco, CA 94107, États-Unis.</p>
+        <p><strong>Contact :</strong> [ton adresse email professionnelle ou universitaire]</p>
+        <p><strong>Crédits :</strong> Ce site a été développé avec l'assistance de l'intelligence artificielle Claude (Anthropic) pour la structuration du code Javascript. Lien de la conversation : [colle ici le lien de partage de cette conversation]</p>
+    </section>
     <script src="script.js"></script>
 </body>
 </html>
