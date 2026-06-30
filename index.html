@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Alicia BIWOLE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <h1>Mon Portfolio</h1>
+        <section id="about">
+            <img src="images/about-me.jpg" alt="Alicia Biwolé">
+            <div id="about-texte">
+                <h2>About me</h2>
+                <p>Je suis <strong>Alicia Biwolé</strong>, designer graphique et exploratrice visuelle passionnée. 
+                Née entre les couleurs vives du Cameroun et l'énergie du monde contemporain parisien, 
+                je cherche à créer des designs qui résonnent, qui portent une histoire et une âme.</p>
+            </div>
+        </section>
+        <ul id="liste-projets">
+          <!-- les projets seront ajoutés ici par Javascript -->
+        </ul>
+      </main>
+      <footer>
+        <p>Alicia Biwolé — Designer Graphique</p>
+        <p>Portfolio 2025</p>
+    </footer>
+    <div id="popup" style="display:none;">
+        <div id="popup-contenu">
+            <button id="popup-fermer">✕</button>
+            <h2 id="popup-titre"></h2>
+            <p id="popup-description"></p>
+            <div id="carrousel">
+                <button id="btn-precedent">←</button>
+                <img id="carrousel-image" src="" alt="">
+                <button id="btn-suivant">→</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
