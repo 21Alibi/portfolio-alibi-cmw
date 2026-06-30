@@ -117,6 +117,7 @@ function ouvrirPopup(projet) {
     photosActuelles = projet.photos;
     indexPhotoActuelle = 0;
     document.querySelector("#carrousel-image").src = photosActuelles[0];
+    document.querySelector("#carrousel-image").alt = "Photo du projet " + projet.titre;
     document.querySelector("#popup").style.display = "flex";
 }
 
@@ -185,6 +186,7 @@ document.querySelector("#btn-suivant").addEventListener("click", function() {
         indexPhotoActuelle = 0;
     }
     document.querySelector("#carrousel-image").src = photosActuelles[indexPhotoActuelle];
+    document.querySelector("#carrousel-image").alt = "Photo " + (indexPhotoActuelle + 1);
 });
 
 // Bouton photo précédente
@@ -194,6 +196,7 @@ document.querySelector("#btn-precedent").addEventListener("click", function() {
         indexPhotoActuelle = photosActuelles.length - 1;
     }
     document.querySelector("#carrousel-image").src = photosActuelles[indexPhotoActuelle];
+    document.querySelector("#carrousel-image").alt = "Photo " + (indexPhotoActuelle + 1);
 });
 
 // Appel de la fonction principale
